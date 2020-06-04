@@ -10,8 +10,9 @@ import java.util.stream.Collectors;
 
 public class DatasetFetcher {
     private final String WAMIZ_URL = "https://wamiz.pl";
-    private final String DOGS_CONNECTION_URL = "https://wamiz.pl/pies/rasy";
-    private final String CATS_CONNECTION_URL = "https://wamiz.pl/kot/rasy";
+    private final String BREED = "/rasy";
+    private final String DOGS_CONNECTION_URL = WAMIZ_URL + "/pies" + BREED;
+    private final String CATS_CONNECTION_URL = WAMIZ_URL + "/kot" + BREED;
     private final int DATASET_SIZE = 8;
 
     public List<Map.Entry<String, String>> fetchData() throws IOException {
