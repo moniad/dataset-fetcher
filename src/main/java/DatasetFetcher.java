@@ -71,7 +71,7 @@ public class DatasetFetcher {
         return doc.getElementsByClass("listView-list--homepageBreed")
                 .get(0)
                 .getElementsByClass("listView-item--homepageBreed")
-                .subList(0, DATASET_SIZE)
+//                .subList(0, DATASET_SIZE)
                 .stream()
                 .map(el -> WAMIZ_URL.concat(el.getElementsByClass("listView-item-title--homepageBreed").get(0)
                         .attr("href")))
